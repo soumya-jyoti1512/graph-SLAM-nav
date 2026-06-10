@@ -1,0 +1,26 @@
+graph_slam:
+  ros__parameters:
+   
+    keyframe_trans_threshold: 0.3     
+    keyframe_rot_threshold: 0.3       
+  
+    icp_max_correspondence_distance: 0.5  
+    icp_max_iterations: 30
+    icp_min_inliers: 30               
+    icp_max_fitness: 0.20             
+
+    loop_radius: 1.5                  
+    loop_min_keyframe_gap: 10          
+    loop_max_fitness: 0.10             
+    loop_min_inliers: 50
+
+    odom_info: [200.0, 200.0, 500.0]  
+    icp_info:  [100.0, 100.0, 200.0]   
+    loop_info: [ 50.0,  50.0, 100.0]   
+
+    optimize_iterations: 10            
+    max_scan_range: 3.3                
+
+    map_frame: "map"
+    odom_frame: "odom"
+    base_frame: "base_footprint"
