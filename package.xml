@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>slam_nav</name>
+  <version>1.0.0</version>
+  <description>
+    A 2D LiDAR SLAM and navigation stack built from scratch in ROS2 Jazzy.
+    Includes a custom ICP front-end with a pose-graph back-end (g2o or built-in Gauss-Newton),occupancy grid mapping, A* global planner,and a potential field local planner.
+  </description>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  <!-- g2o-python is optional; install via pip if available.
+       The pose graph falls back to a built-in Gauss-Newton solver if not. -->
+
+  <!-- Simulation -->
+  <exec_depend>turtlebot3_gazebo</exec_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
