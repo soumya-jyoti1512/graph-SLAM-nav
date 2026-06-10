@@ -1,0 +1,42 @@
+grid_mapper:
+  ros__parameters:
+    resolution: 0.05        
+    width: 300              
+    height: 300              
+    log_occ: 0.85            
+    log_free: 0.40           
+    log_min: -5.0           
+    log_max: 5.0
+    max_range: 3.3           
+    publish_period: 0.5      
+    map_frame: "map"
+
+global_planner:
+  ros__parameters:
+    inflation_radius: 0.22  
+    occupied_threshold: 50  
+    allow_unknown: true     
+    smooth_weight_data: 0.5  
+    smooth_weight_smooth: 0.3 
+    smooth_iterations: 50
+    map_frame: "map"
+    base_frame: "base_footprint"
+
+local_planner:
+  ros__parameters:
+    k_att: 1.0              
+    k_rep: 0.6              
+    d_threshold: 0.6        
+    att_clip: 1.0            
+    lookahead_distance: 0.4  
+    goal_tolerance: 0.15     
+    max_linear_vel: 0.22     
+    max_angular_vel: 1.5     
+    k_angular: 1.5           
+    heading_turn_thresh: 1.0 
+    control_period: 0.1      
+    stuck_speed: 0.03       
+    stuck_time: 2.0          
+    escape_time: 1.0        
+    map_frame: "map"
+    base_frame: "base_footprint"
