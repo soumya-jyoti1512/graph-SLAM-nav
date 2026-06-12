@@ -83,9 +83,7 @@ The environment is the standard `turtlebot3_world`  which provides a mix of corn
 
 ---
 
-## Preliminary Results
-
-Validated end-to-end on a synthetic 26-pose closed-loop trajectory:
+## Results
 
 | Metric | Value |
 |--------|-------|
@@ -95,7 +93,8 @@ Validated end-to-end on a synthetic 26-pose closed-loop trajectory:
 | Mean trajectory error (26 keyframes) | 11.0 cm |
 | Pure odometry endpoint error (baseline) | 18.3 cm |
 
-Trajectory and convergence plots are in `docs/`.
+https://github.com/user-attachments/assets/573e025c-0fb9-4084-9609-da0c1c11628b 
+
 
 ---
 
