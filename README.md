@@ -1,4 +1,4 @@
-# Indoor Autonomous Navigation with a Custom Graph SLAM Stack (Ongoing)
+# Indoor Autonomous Navigation via Custom Graph SLAM Stack
 
 > A ROS 2 implementation of 2D LiDAR SLAM and navigation, built from scratch with an ICP scan-matching front end, a pose-graph back end with loop closure, and an A\* + potential field navigation stack.
 
@@ -93,7 +93,7 @@ The environment is the standard `turtlebot3_world`  which provides a mix of corn
 | Mean trajectory error (26 keyframes) | 11.0 cm |
 | Pure odometry endpoint error (baseline) | 18.3 cm |
 
-https://github.com/user-attachments/assets/573e025c-0fb9-4084-9609-da0c1c11628b 
+https://github.com/user-attachments/assets/573e025c-0fb9-4084-9609-da0c1c11628b https://github.com/user-attachments/assets/021eb50f-ae72-4bcb-bdb9-2d678472e673
 
 
 ---
